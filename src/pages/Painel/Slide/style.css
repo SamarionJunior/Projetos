@@ -1,0 +1,47 @@
+.Slide{
+    border: solid 1px black;
+    margin: 0.25em;
+    padding: 0.25em;
+}
+.Slider{
+    border: solid 1px black;
+    display: flex;
+    margin: 0.25em;
+    padding: 0.25em;
+}
+.SliderButton{
+    min-width: 100px;
+    margin: 0.25em;
+    padding: 0.25em;
+}
+.SliderScroll{
+    border: solid 1px black;
+    overflow: auto;
+    display: flex;
+    margin: 0.25em;
+    padding: 0.25em;
+}
+/* .Slide{
+    display: flex;
+    flex-direction: column;
+}
+.Slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+}
+.Scroll{
+    display: flex;
+    width: 200px;
+    overflow: hidden;
+}
+.Item{
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+}
+.Item>button,.Item>p{
+    display: flex;
+    width: 50px;
+} */
