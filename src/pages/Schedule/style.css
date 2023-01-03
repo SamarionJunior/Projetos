@@ -1,7 +1,7 @@
 .Schedule{
     width: 100%;
-    height: calc(100vh - 0.5em);
-    padding: 0.25em;
+    height: calc(100vh - 1em);
+    padding: 0.5em;
     background-color: #111;
     color: #fff;
     display: flex;
@@ -10,24 +10,27 @@
 .ScheduleContent{
     width: 100%;
     height: calc(100% - 1em);
-    padding: 0.25em;
-    margin: 0.25em;
+    padding: 0.5em;
     background-color: #222;
     color: #fff;
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: auto;
 }
 .Day{
     width: 100%;
-    min-width: 200px;
-    max-width: 600px;
+    min-width: 600px;
+    max-width: 900px;
     height: calc(100% - 1em);
     padding: 0.5em;
-    margin: 0.25em;
     background-color: #333;
     display: flex;
     flex-direction: column;
     overflow: auto;
     position: relative;
+    justify-content: flex-start;
+    align-items: center;
 }
 .Event{
     width: 100%;
