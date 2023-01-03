@@ -8,13 +8,15 @@ import { Routes, Route } from "react-router-dom";
 // import Home from "./pages/Home";
 import Schedule from "./pages/Schedule";
 import ToDo from "./pages/ToDo";
+import Notepad from "./pages/Notepad";
 
 const App = _ => (
   <div className="App">
     <Routes>
       {/* <Route path="painel" element={<Painel />} /> */}
-      <Route path="/" element={<Schedule />} />
+      <Route path="agenda" element={<Schedule />} />
       <Route path="todo" element={<ToDo />} />
+      <Route path="/" element={<Notepad />} />
     </Routes>
   </div>
 )

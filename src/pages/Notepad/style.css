@@ -1,0 +1,118 @@
+.ToDo{
+    width: calc(100vw - 2em);
+    height: calc(100vh - 2em);
+    padding: 1em;
+    background-color: #111;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+}
+.ToDoContent{
+    width: calc(100% - 1em);
+    height: calc(100% - 1em);
+    padding: 0.5em;
+    background-color: #222;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto ;
+    position: relative;
+}
+.ButtonAdicionar{
+    width: 25px;
+    height: 25px;
+    padding: 1em;
+    font-size: 0.5em;
+    line-height: 0;
+    letter-spacing: 0;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+.Note{
+    margin: 0.5em;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: calc(25% - 3em);
+    max-height: calc(10% - 3em);
+    width: calc(100% - 3em);
+    height: calc(100% - 3em);
+    padding: 1em;
+    background-color: #333;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all ease-in-out 0.1s;
+}
+.NoteButton{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 0.5em;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.NoteButtonClose{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.5em;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.InputTitle{
+    font-size: 50%;
+    width: calc(100% - 2em);
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: #444;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    color: #fff;
+    font-family: "Press Start 2P Regular";
+}
+.TextArea{
+    font-size: 50%;
+    width: calc(100% - 2em);
+    flex-grow: 1;
+    padding: 1em;
+    background-color: #444;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    color: #fff;
+    font-family: 'Space Mono Regular';
+}
