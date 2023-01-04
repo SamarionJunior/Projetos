@@ -46,8 +46,8 @@ const Notepad = _ => {
         console.log(notas)
     })
     return (
-        <div id="ToDo" className="ToDo">
-            <div className="ToDoContent">
+        <div id="Notepad" className="Notepad">
+            <div className="NotepadContent">
                 <input className="ButtonAdicionar" type="button" value="ADD" onClick={() => Insert()}/>
                 {notas.map(nota =>
                     <div key={nota.id} id={"Note"+nota.id} className="Note">

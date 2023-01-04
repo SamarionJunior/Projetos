@@ -1,4 +1,4 @@
-.ToDo{
+.Notepad{
     width: calc(100vw - 2em);
     height: calc(100vh - 2em);
     padding: 1em;
@@ -8,7 +8,7 @@
     text-decoration: none;
     display: flex;
 }
-.ToDoContent{
+.NotepadContent{
     width: calc(100% - 1em);
     height: calc(100% - 1em);
     padding: 0.5em;
