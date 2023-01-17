@@ -15,9 +15,8 @@
     height: 100%;
     overflow: auto;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
 }
 
     .ToDoContent{
@@ -25,27 +24,43 @@
         margin: 1.0rem;
         padding: 0.5rem;
         width: calc(100% - 2.0rem);
+        max-width: calc(1024px - 1.0rem);
+        height: calc(100% - 2.0rem);
+        overflow: auto;
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
         .List{
             background-color: #ccc;
-            padding: 0.5rem;
             margin: 0.5rem;
+            padding: 0.5rem;
             width: calc(100% - 1.0rem);
+            max-width: calc(50% - 1.0rem);
+            min-width: calc(30% - 1.0rem);
+            height: calc(100% - 1.0rem);
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            /* max-width: calc(50% - 1.0rem); */
         }
 
             .Form{
                 background-color: #bbb;
-                padding: 0.5rem;
                 margin: 0.5rem;
+                padding: 0.5rem;
                 width: calc(100% - 1.0rem);
+                height: auto;
                 display: flex;
             }
 
                 .TextInput{
                     background-color: #aaa;
-                    padding: 1.0rem;
                     margin: 0.5rem;
+                    padding: 1.0rem;
                     flex-grow: 1;
                     min-width: calc(50% - 1rem);
                         
@@ -56,8 +71,8 @@
 
                 .ButtonTextInput{
                     background-color: #aaa;
-                    padding: 1.0rem;
                     margin: 0.5rem;
+                    padding: 1.0rem;
                     width: auto;
                     max-width: calc(50% - 1rem);
                     min-width: calc(6.4rem - 1rem);
@@ -69,58 +84,67 @@
 
             .Tasks{
                 background-color: #bbb;
-                padding: 0.5rem;
                 margin: 0.5rem;
+                padding: 1.0rem;
                 width: calc(100% - 1.0rem);
+                flex-grow: 1;
+                overflow: auto;
             }
 
-                .Items{
-                    background-color: #aaa;
-                    padding: 0.5rem;
-                    margin: 0.5rem;
-                    width: calc(100% - 1.0rem);
-                    display: flex;
+                .Scroll{
+                    width: 100%;
+                    height: 100%;
+                    overflow: auto;
                 }
 
-                    .containerCheckBox{
-                        background-color: #999;
-                        padding: 1.0rem;
-                        margin: 1.0rem;
-                        width: auto;
+                    .Items{
+                        background-color: #aaa;
+                        /* margin: 0.5rem; */
+                        padding: 0.5rem;
+                        width: 100%;
+                        /* width: calc(100% - 1.0rem); */
                         display: flex;
-                        justify-content: center;
-                        align-content: center;
-                        width: auto;
-                        min-width: calc(16px + 2rem);
-                        max-width: calc(10% - 2rem);
                     }
 
-                    .Label{
-                        background-color: #999;
-                        padding: 1.0rem;
-                        margin: 1.0rem;
-                        flex-grow: 1;
-                        
-                        text-overflow: ellipsis;
-                        overflow: hidden;
-                        white-space: nowrap;
-                    }
+                        .containerCheckBox{
+                            background-color: #999;
+                            margin: 0.5rem;
+                            padding: 1.0rem;
+                            width: auto;
+                            display: flex;
+                            justify-content: center;
+                            align-content: center;
+                            width: auto;
+                            min-width: calc(16px + 2rem);
+                            max-width: calc(10% - 2rem);
+                        }
 
-                    .ButtonCheckInput{
-                        background-color: #999;
-                        padding: 1.0rem;
-                        margin: 1.0rem;
-                        width: auto;
-                        max-width: calc(20% - 1rem);
-                        min-width: calc(6.4rem - 1rem);
-                        
-                        text-overflow: ellipsis;
-                        overflow: hidden;
-                        white-space: nowrap;
-                    }
+                        .Label{
+                            background-color: #999;
+                            margin: 0.5rem;
+                            padding: 1.0rem;
+                            flex-grow: 1;
+                            
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                        }
+
+                        .ButtonCheckInput{
+                            background-color: #999;
+                            margin: 0.5rem;
+                            padding: 1.0rem;
+                            width: auto;
+                            max-width: calc(20% - 1rem);
+                            min-width: calc(6.4rem - 1rem);
+                            
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                        }
 
 
 
 .cortado{
-    text-decoration:line-through;
+    text-decoration: line-through;
 }
