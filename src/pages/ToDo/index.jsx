@@ -4,105 +4,107 @@ import "./style.css"
 import React from "react";
 import { useState } from "react";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const ToDo = _ => {
     console.clear()
     const [newTaskInput, setNewTaskInput] = useState("")
     const [tasks, setTasks] = useState([
-        {isChecked: false, name: "fdsghsdfgsfgfgsfgsdfgsdfgsdfgsdfgs", id: Math.random()},
+        {isChecked: false, name: "fdsghsdfgsfgfgsfg344535234525634636456345635sdfgsdfgsdfgsdfgs", id: Math.random()},
         {isChecked: false, name: "b", id: Math.random()},
         {isChecked: false, name: "c", id: Math.random()},
         {isChecked: false, name: "c", id: Math.random()},
         {isChecked: false, name: "c", id: Math.random()},
         {isChecked: false, name: "c", id: Math.random()},
         {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
-        {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
+        // {isChecked: false, name: "c", id: Math.random()},
     ])
     const setNewTask = task => {
         setTasks(oldTasks => 
@@ -126,43 +128,22 @@ const ToDo = _ => {
     return (
         <div id="ToDo" className="ToDo">
             <main className="ToDoContent">
-                <section className="List">
+                <section className="List BoxShadow">
                     <div className="Form">
                         <input id="NewTaskInput" name="NewTaskInput" type="text" className="TextInput" placeholder="Digite uma Nova Tarefa?" value={newTaskInput} onChange={(e) => setNewTaskInput(String(e.target.value))}/>
-                        <button className="ButtonTextInput" onClick={() => newTaskInput !== "" ? setNewTask(newTaskInput) : console.log("Vazio!!!")}>A</button>
+                        <button className="ButtonTextInput" onClick={() => newTaskInput !== "" ? setNewTask(newTaskInput) : console.log("Vazio!!!")}>
+                            <FontAwesomeIcon icon="fa-plus" />
+                        </button>
                     </div>
                     <div className="Tasks">
                         <div className="Scroll">
                             {tasks.length !== 0 ? tasks.map(task => 
                                 <div key={String(task.id)} className="Items">
-                                    <label className="containerCheckBox">
-                                        <input id={`check${task.id}`} name={`check${task.id}`} type="checkbox" className="CheckInput"  check={String(task.isChecked)} onChange={(e) => Check(Number(task.id))}/>
-                                        <span className="spanChackBox"></span>
-                                    </label>
+                                    <input id={`check${task.id}`} name={`check${task.id}`} type="checkbox" className="CheckInput"  check={String(task.isChecked)} onChange={(e) => Check(Number(task.id))}/>
                                     <label htmlFor={`check${task.id}`} className={task.isChecked ? "Label cortado" : "Label"}>{task.name}</label>
-                                    <button className="ButtonCheckInput" onClick={(e => RemoveTask(Number(task.id)))}>R</button>
-                                </div>
-                            ) : 
-                                <h1>Vazio!!!</h1>
-                            }
-                        </div>
-                    </div>
-                </section>
-                <section className="List">
-                    <div className="Form">
-                        <input id="NewTaskInput" name="NewTaskInput" type="text" className="TextInput" placeholder="Digite uma Nova Tarefa?" value={newTaskInput} onChange={(e) => setNewTaskInput(String(e.target.value))}/>
-                        <button className="ButtonTextInput" onClick={() => newTaskInput !== "" ? setNewTask(newTaskInput) : console.log("Vazio!!!")}>A</button>
-                    </div>
-                    <div className="Tasks">
-                        <div className="Scroll">
-                            {tasks.length !== 0 ? tasks.map(task => 
-                                <div key={String(task.id)} className="Items">
-                                    <label className="containerCheckBox">
-                                        <input id={`check${task.id}`} name={`check${task.id}`} type="checkbox" className="CheckInput"  check={String(task.isChecked)} onChange={(e) => Check(Number(task.id))}/>
-                                        <span className="spanChackBox"></span>
-                                    </label>
-                                    <label htmlFor={`check${task.id}`} className={task.isChecked ? "Label cortado" : "Label"}>{task.name}</label>
-                                    <button className="ButtonCheckInput" onClick={(e => RemoveTask(Number(task.id)))}>R</button>
+                                    <button className="ButtonCheckInput" onClick={(e => RemoveTask(Number(task.id)))}>
+                                        <FontAwesomeIcon icon="fa-trash" />
+                                    </button>
                                 </div>
                             ) : 
                                 <h1>Vazio!!!</h1>

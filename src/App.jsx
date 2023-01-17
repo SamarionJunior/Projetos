@@ -3,12 +3,18 @@ import "./style.css";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faPlus, faTrash } from '@fortawesome/free-solid-svg-icons'
+
 // import Painel from './pages/Painel';
 // import Gallery from './pages/Gallery';
 // import Home from "./pages/Home";
 import Schedule from "./pages/Schedule";
 import ToDo from "./pages/ToDo";
 import Notepad from "./pages/Notepad";
+
+library.add(fab, faPlus, faTrash)
 
 const App = _ => (
   <div className="App">

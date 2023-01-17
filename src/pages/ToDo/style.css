@@ -1,4 +1,5 @@
-/* Todo que tiver texto tem que ter no maximo 30 caracteres */
+
+
 
 .ToDo *{
     font-size: 1.6rem;
@@ -6,26 +7,23 @@
     line-height: calc(1.6rem / 100 * 120);
     border-radius: 4px;
 
-    transition: all ease-in-out 0.3s;
+    transition: all ease 0.1s;
 }
 
 .ToDo{
-    background-color: #eee;
     width: 100%;
     height: 100%;
     overflow: auto;
     display: flex;
     justify-content: center;
     align-content: flex-start;
+    background-color: #eee;
 }
 
     .ToDoContent{
-        background-color: #ddd;
-        margin: 1.0rem;
-        padding: 0.5rem;
-        width: calc(100% - 2.0rem);
-        max-width: calc(1024px - 1.0rem);
-        height: calc(100% - 2.0rem);
+        width: 100%;
+        max-width: 1024px;
+        height: 100%;
         overflow: auto;
         display: flex;
         justify-content: center;
@@ -35,58 +33,51 @@
     }
 
         .List{
-            background-color: #ccc;
-            margin: 0.5rem;
-            padding: 0.5rem;
-            width: calc(100% - 1.0rem);
-            max-width: calc(50% - 1.0rem);
-            min-width: calc(30% - 1.0rem);
-            height: calc(100% - 1.0rem);
+            margin: 2rem;
+            padding: 2rem;
+            width: calc(100% - 2.0rem);
+            max-width: calc(512px - 2.0rem);
+            min-width: calc(280px - 2.0rem);
+            height: calc(100% - 4.0rem);
             overflow: auto;
             display: flex;
             flex-direction: column;
-            /* max-width: calc(50% - 1.0rem); */
+            background-color: white;
         }
 
             .Form{
-                background-color: #bbb;
-                margin: 0.5rem;
-                padding: 0.5rem;
-                width: calc(100% - 1.0rem);
+                margin-bottom: 2rem;
+                width: 100%;
                 height: auto;
-                display: flex;
+                display: grid;
+                grid-template-columns: 1fr auto;
             }
 
                 .TextInput{
-                    background-color: #aaa;
-                    margin: 0.5rem;
                     padding: 1.0rem;
+                    padding-left: 0;
+                    padding-right: 0;
                     flex-grow: 1;
-                    min-width: calc(50% - 1rem);
+                    min-width: 50%;
                         
                     text-overflow: ellipsis;
                     overflow: hidden;
                     white-space: nowrap;
+
+                    margin-right: 2rem;
                 }
 
                 .ButtonTextInput{
-                    background-color: #aaa;
-                    margin: 0.5rem;
-                    padding: 1.0rem;
-                    width: auto;
-                    max-width: calc(50% - 1rem);
-                    min-width: calc(6.4rem - 1rem);
-                        
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                    white-space: nowrap;
+                    background-color: transparent;
+                    font-size: black;
+                    cursor: pointer;
+                }
+                .ButtonTextInput:hover{
+                    color: #fff;
                 }
 
             .Tasks{
-                background-color: #bbb;
-                margin: 0.5rem;
-                padding: 1.0rem;
-                width: calc(100% - 1.0rem);
+                width: 100%;
                 flex-grow: 1;
                 overflow: auto;
             }
@@ -95,56 +86,65 @@
                     width: 100%;
                     height: 100%;
                     overflow: auto;
+                    position: relative;
                 }
 
                     .Items{
-                        background-color: #aaa;
-                        /* margin: 0.5rem; */
-                        padding: 0.5rem;
                         width: 100%;
-                        /* width: calc(100% - 1.0rem); */
-                        display: flex;
+                        display: grid;
+                        grid-template-columns: auto 1fr auto;
+                        gap: 2rem;
+                        margin-bottom: 2rem;
                     }
 
-                        .containerCheckBox{
-                            background-color: #999;
-                            margin: 0.5rem;
-                            padding: 1.0rem;
+                        .CheckInput{
                             width: auto;
                             display: flex;
                             justify-content: center;
                             align-content: center;
                             width: auto;
-                            min-width: calc(16px + 2rem);
-                            max-width: calc(10% - 2rem);
+                            min-width: 1.6rem;
+                            cursor: pointer;
                         }
 
                         .Label{
-                            background-color: #999;
-                            margin: 0.5rem;
+
                             padding: 1.0rem;
+                            padding-left: 0;
+                            padding-right: 0;
                             flex-grow: 1;
                             
                             text-overflow: ellipsis;
                             overflow: hidden;
                             white-space: nowrap;
+                            cursor: pointer;
                         }
 
                         .ButtonCheckInput{
-                            background-color: #999;
-                            margin: 0.5rem;
-                            padding: 1.0rem;
-                            width: auto;
-                            max-width: calc(20% - 1rem);
-                            min-width: calc(6.4rem - 1rem);
-                            
-                            text-overflow: ellipsis;
-                            overflow: hidden;
-                            white-space: nowrap;
+                            background-color: transparent;
+                            font-size: black;
+                            cursor: pointer;
+                        }
+                        .ButtonCheckInput:hover{
+                            color: #fff;
                         }
 
 
 
 .cortado{
     text-decoration: line-through;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #ccc;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 4px;
 }
