@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faPlus, faTrash } from '@fortawesome/free-solid-svg-icons'
+import { faPlus, faTrash, faMagnifyingGlass, faXmark, faArrowsUpDownLeftRight, faPen, faCaretDown} from '@fortawesome/free-solid-svg-icons'
 
 // import Painel from './pages/Painel';
 // import Gallery from './pages/Gallery';
@@ -14,14 +14,14 @@ import Schedule from "./pages/Schedule";
 import ToDo from "./pages/ToDo";
 import Notepad from "./pages/Notepad";
 
-library.add(fab, faPlus, faTrash)
+library.add(fab, faPlus, faTrash, faMagnifyingGlass, faXmark, faArrowsUpDownLeftRight, faPen, faCaretDown)
 
 const App = _ => (
   <div className="App">
     <Routes>
       {/* <Route path="painel" element={<Painel />} /> */}
-      <Route path="agenda" element={<Schedule />} />
-      <Route path="/" element={<ToDo />} />
+      <Route path="/" element={<Schedule />} />
+      <Route path="todo" element={<ToDo />} />
       <Route path="notepad" element={<Notepad />} />
     </Routes>
   </div>

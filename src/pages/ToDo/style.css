@@ -5,7 +5,7 @@
     font-size: 1.6rem;
     letter-spacing: normal;
     line-height: calc(1.6rem / 100 * 120);
-    border-radius: 4px;
+    /* border-radius: 4px; */
 
     transition: all ease 0.1s;
 }
@@ -50,7 +50,8 @@
                 width: 100%;
                 height: auto;
                 display: grid;
-                grid-template-columns: 1fr auto;
+                grid-template-columns: auto 1fr auto auto;
+                grid-gap: 2rem;
             }
 
                 .TextInput{
@@ -63,8 +64,11 @@
                     text-overflow: ellipsis;
                     overflow: hidden;
                     white-space: nowrap;
-
-                    margin-right: 2rem;
+                    
+                    padding-bottom: calc(1rem - 3px);
+                    border-bottom: 3px solid transparent;
+                }.TextInput:hover, .TextInput:focus{
+                    border-bottom: 3px solid black;
                 }
 
                 .ButtonTextInput{
@@ -92,9 +96,12 @@
                     .Items{
                         width: 100%;
                         display: grid;
-                        grid-template-columns: auto 1fr auto;
+                        grid-template-columns: auto auto 1fr auto auto auto;
                         gap: 2rem;
-                        margin-bottom: 2rem;
+                        margin-bottom: calc(2rem -  3px);
+                        border-bottom: 3px solid transparent;
+                    }.Items:hover, .Items:focus{
+                        border-bottom: 3px solid black;
                     }
 
                         .CheckInput{
@@ -125,6 +132,9 @@
                             font-size: black;
                             cursor: pointer;
                         }
+                        /* .ButtonCheckInput>*{
+                            font-size: 3rem;
+                        } */
                         .ButtonCheckInput:hover{
                             color: #fff;
                         }

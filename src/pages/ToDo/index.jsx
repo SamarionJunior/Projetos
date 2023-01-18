@@ -130,7 +130,13 @@ const ToDo = _ => {
             <main className="ToDoContent">
                 <section className="List BoxShadow">
                     <div className="Form">
+                        <button className="ButtonTextInput" onClick={() => newTaskInput !== "" ? setNewTask(newTaskInput) : console.log("Vazio!!!")}>
+                            <FontAwesomeIcon icon="fa-magnifying-glass" />
+                        </button>
                         <input id="NewTaskInput" name="NewTaskInput" type="text" className="TextInput" placeholder="Digite uma Nova Tarefa?" value={newTaskInput} onChange={(e) => setNewTaskInput(String(e.target.value))}/>
+                        <button className="ButtonTextInput" onClick={() => newTaskInput !== "" ? setNewTask(newTaskInput) : console.log("Vazio!!!")}>
+                            <FontAwesomeIcon icon="fa-xmark" />
+                        </button>
                         <button className="ButtonTextInput" onClick={() => newTaskInput !== "" ? setNewTask(newTaskInput) : console.log("Vazio!!!")}>
                             <FontAwesomeIcon icon="fa-plus" />
                         </button>
@@ -140,7 +146,16 @@ const ToDo = _ => {
                             {tasks.length !== 0 ? tasks.map(task => 
                                 <div key={String(task.id)} className="Items">
                                     <input id={`check${task.id}`} name={`check${task.id}`} type="checkbox" className="CheckInput"  check={String(task.isChecked)} onChange={(e) => Check(Number(task.id))}/>
+                                    <button className="ButtonCheckInput" onClick={(e => RemoveTask(Number(task.id)))}>
+                                        <FontAwesomeIcon icon="fa-caret-down" />
+                                    </button>
                                     <label htmlFor={`check${task.id}`} className={task.isChecked ? "Label cortado" : "Label"}>{task.name}</label>
+                                    <button className="ButtonCheckInput" onClick={(e => RemoveTask(Number(task.id)))}>
+                                        <FontAwesomeIcon icon="fa-arrows-up-down-left-right" />
+                                    </button>
+                                    <button className="ButtonCheckInput" onClick={(e => RemoveTask(Number(task.id)))}>
+                                        <FontAwesomeIcon icon="fa-pen" />
+                                    </button>
                                     <button className="ButtonCheckInput" onClick={(e => RemoveTask(Number(task.id)))}>
                                         <FontAwesomeIcon icon="fa-trash" />
                                     </button>
