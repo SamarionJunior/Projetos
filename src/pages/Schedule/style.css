@@ -1,141 +1,162 @@
+
+
+
+.Schedule *{
+    font-size: 1.6rem;
+    letter-spacing: normal;
+    line-height: calc(1.6rem / 100 * 120);
+    /* border-radius: 4px; */
+
+    transition: all ease 0.1s;
+}
+
 .Schedule{
     width: 100%;
-    height: calc(100vh - 1em);
-    padding: 0.5em;
-    background-color: #111;
-    color: #fff;
-    display: flex;
-    overflow: auto;
-}
-.ScheduleContent{
-    width: 100%;
-    height: calc(100% - 1em);
-    padding: 0.5em;
-    background-color: #222;
-    color: #fff;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    overflow: auto;
-}
-.Day{
-    width: 100%;
-    min-width: 600px;
-    max-width: 900px;
-    height: calc(100% - 1em);
-    padding: 0.5em;
-    background-color: #333;
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
-    position: relative;
-    justify-content: flex-start;
-    align-items: center;
-}
-.Event{
-    width: 100%;
-    background-color: #444;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.Hour{
-    background-color: #555;
-    color: #fff;
-    border: none;
-    outline: none;
-    text-decoration: none;
-    padding: 0.5em;
-    margin-right: 0;
-    height: calc(100% - 1em);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.EventText{
-    background-color: #555;
-    color: #fff;
-    border: none;
-    outline: none;
-    text-decoration: none;
-    flex-grow: 1;
-    padding: 0.5em;
-    height: calc(100% - 1em);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.EventDelete{
     height: 100%;
-    background-color: #fff;
-    border: none;
-    outline: none;
-    text-decoration: none;
-    cursor: pointer;
-    padding: 0.5em 0.25em;
-    font-weight: bold;
-    transition: all ease-in-out 0.1s;
-}
-.EventDelete:hover{
-    background-color: #000;
-    color: #fff;
-}
-
-/* assass */
-
-.Input{
-    width: calc(100% - 2em);
-    padding: 1em;
-    background-color: #444;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.InputHour{
-    height: calc(50px - 2em);
-    padding: 1em;
-    background-color: #fff;
-    outline: none;
-    text-decoration: none;
-    border: none;
-}
-.InputText{
-    height: calc(50px - 2em);
-    padding: 1em;
-    background-color: #fff;
-    flex-grow: 1;
-    outline: none;
-    text-decoration: none;
-    border: none;
-}
-.InputButton{
-    height: 50px;
-    padding: 1em;
+    overflow: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    border: none;
-    outline: none;
-    text-decoration: none;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all ease-in-out 0.1s;
+    align-content: flex-start;
+    background-color: #eee;
 }
-.InputButton:hover{
-    background-color: #000;
-    color: #fff;
+
+    .ScheduleContent{
+        width: 100%;
+        max-width: 1024px;
+        height: 100%;
+        overflow: auto;
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+        .ScheduleDay{
+            margin: 2rem;
+            padding: 2rem;
+            width: calc(100% - 2.0rem);
+            max-width: calc(512px - 2.0rem);
+            min-width: calc(280px - 2.0rem);
+            height: calc(100% - 4.0rem);
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+        }
+
+            .ScheduleFrom{
+                margin-bottom: 2rem;
+                width: 100%;
+                height: auto;
+                display: grid;
+                grid-template-columns: auto auto 1fr auto auto;
+                grid-gap: 2rem;
+            }
+
+                .ScheduleInputHour{
+                    /* border: 1px solid black; */
+                }
+
+                .ScheduleTextInput{
+                    padding: 1.0rem;
+                    padding-left: 0;
+                    padding-right: 0;
+                        
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    
+                    padding-bottom: calc(1rem - 3px);
+                    border-bottom: 3px solid transparent;
+                }.ScheduleTextInput:hover, .ScheduleTextInput:focus{
+                    border-bottom: 3px solid black;
+                }
+
+                .ScheduleButtonTextInput{
+                    background-color: transparent;
+                    font-size: black;
+                    cursor: pointer;
+                }
+                .ScheduleButtonTextInput:hover{
+                    color: #fff;
+                }
+
+            .ScheduleEvents{
+                width: 100%;
+                flex-grow: 1;
+                overflow: auto;
+            }
+
+                .ScheduleScroll{
+                    width: 100%;
+                    height: 100%;
+                    overflow: auto;
+                    position: relative;
+                }
+
+                    .ScheduleEvent{
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: auto auto 1fr auto;
+                        gap: 2rem;
+                        margin-bottom: calc(2rem -  3px);
+                        border-bottom: 3px solid transparent;
+                    }.ScheduleEvent:hover, .ScheduleEvent:focus{
+                        border-bottom: 3px solid black;
+                    }
+
+                        /* .ScheduleCheckInput{
+                            width: auto;
+                            display: flex;
+                            justify-content: center;
+                            align-content: center;
+                            width: auto;
+                            min-width: 1.6rem;
+                            cursor: pointer;
+                        } */
+
+                        .ScheduleLabel{
+
+                            padding: 1.0rem;
+                            padding-left: 0;
+                            padding-right: 0;
+                            flex-grow: 1;
+                            
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            cursor: pointer;
+                        }
+
+                        .ScheduleButtonCheckInput{
+                            background-color: transparent;
+                            font-size: black;
+                            cursor: pointer;
+                        }
+                        /* .ButtonCheckInput>*{
+                            font-size: 3rem;
+                        } */
+                        .ScheduleButtonCheckInput:hover{
+                            color: #fff;
+                        }
+
+
+
+.cortado{
+    text-decoration: line-through;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #ccc;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 4px;
 }
