@@ -1,118 +1,106 @@
+
+
+
+.Notepad *{
+    font-size: 1.6rem;
+    letter-spacing: normal;
+    line-height: calc(1.6rem / 100 * 120);
+    /* border-radius: 4px; */
+
+    transition: all ease 0.1s;
+}
+
 .Notepad{
-    width: calc(100vw - 2em);
-    height: calc(100vh - 2em);
-    padding: 1em;
-    background-color: #111;
-    border: none;
-    outline: none;
-    text-decoration: none;
-    display: flex;
-}
-.NotepadContent{
-    width: calc(100% - 1em);
-    height: calc(100% - 1em);
-    padding: 0.5em;
-    background-color: #222;
-    border: none;
-    outline: none;
-    text-decoration: none;
-    display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    overflow: auto ;
-    position: relative;
-}
-.ButtonAdicionar{
-    width: 25px;
-    height: 25px;
-    padding: 1em;
-    font-size: 0.5em;
-    line-height: 0;
-    letter-spacing: 0;
-    background-color: #fff;
-    color: #000;
-    border: none;
-    outline: none;
-    text-decoration: none;
-    border-radius: 50%;
-    cursor: pointer;
+    width: 100%;
+    min-height: 100%;
+    overflow: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 999;
+    align-content: flex-start;
+    background-color: #eee;
 }
-.Note{
-    margin: 0.5em;
-    min-width: 100px;
-    min-height: 100px;
-    max-width: calc(25% - 3em);
-    max-height: calc(10% - 3em);
-    width: calc(100% - 3em);
-    height: calc(100% - 3em);
-    padding: 1em;
-    background-color: #333;
-    border: none;
-    outline: none;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    transition: all ease-in-out 0.1s;
+
+    .NotepadContent{
+        width: 100%;
+        max-width: 1024px;
+        min-height: 100%;
+        overflow: auto;
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+        .NotepadPainelOfNotes{
+            margin: 2rem;
+            padding: 2rem;
+            width: calc(100% - 2.0rem);
+            max-width: calc(1024px - 2.0rem);
+            min-width: calc(280px - 2.0rem);
+            min-height: calc(100% - 4.0rem);
+            overflow: auto;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(calc(200px - 2rem), calc(100px - 2rem)));
+            grid-template-rows: repeat(auto-fit, minmax(calc(200px - 2rem), calc(100px - 2rem)));
+            gap: 2rem;
+
+            background-color: white;
+            position: relative;
+
+        }
+
+            .ButtonAdicionar{
+                position: absolute;
+            }
+
+            .NotepadNotes{
+                padding: 1rem;
+                width: 100%;
+                max-width: calc(200px - 2rem);
+                min-width: calc(100px - 2rem);
+                height: 100%;
+                max-height: calc(200px - 2rem);
+                min-height: calc(100px - 2rem);
+                overflow: auto;
+                border: 1px solid black;
+                position: relative;
+            }
+
+                .NoteButton{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .NoteButtonClose{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+                .InputTitle{
+                    
+                }
+                .TextArea{
+
+                }
+
+
+
+.cortado{
+    text-decoration: line-through;
 }
-.NoteButton{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font-size: 0.5em;
-    width: 40px;
-    height: 40px;
-    border: none;
-    outline: none;
-    text-decoration: none;
-    border-radius: 50%;
-    cursor: pointer;
+
+::-webkit-scrollbar-track {
+    background-color: #ccc;
+    border-radius: 4px;
 }
-.NoteButtonClose{
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 0.5em;
-    width: 40px;
-    height: 40px;
-    border: none;
-    outline: none;
-    text-decoration: none;
-    border-radius: 50%;
-    cursor: pointer;
+::-webkit-scrollbar {
+    width: 6px;
+    background: #ccc;
+    border-radius: 4px;
 }
-.InputTitle{
-    font-size: 50%;
-    width: calc(100% - 2em);
-    padding: 1em;
-    margin-bottom: 1em;
-    background-color: #444;
-    border: none;
-    outline: none;
-    text-decoration: none;
-    display: flex;
-    color: #fff;
-    font-family: "Press Start 2P Regular";
-}
-.TextArea{
-    font-size: 50%;
-    width: calc(100% - 2em);
-    flex-grow: 1;
-    padding: 1em;
-    background-color: #444;
-    border: none;
-    outline: none;
-    text-decoration: none;
-    display: flex;
-    color: #fff;
-    font-family: 'Space Mono Regular';
+::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 4px;
 }

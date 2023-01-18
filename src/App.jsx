@@ -28,9 +28,9 @@ const App = _ => (
   <div className="App">
     <Routes>
       {/* <Route path="painel" element={<Painel />} /> */}
-      <Route path="/" element={<Schedule />} />
+      <Route path="agenda" element={<Schedule />} />
       <Route path="todo" element={<ToDo />} />
-      <Route path="notepad" element={<Notepad />} />
+      <Route path="/" element={<Notepad />} />
     </Routes>
   </div>
 )
