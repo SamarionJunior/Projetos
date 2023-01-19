@@ -5,85 +5,187 @@
     font-size: 1.6rem;
     letter-spacing: normal;
     line-height: calc(1.6rem / 100 * 120);
-    /* border-radius: 4px; */
+    border-radius: 4px;
 
     transition: all ease 0.1s;
 }
 
 .Notepad{
     width: 100%;
-    min-height: 100%;
-    overflow: auto;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     align-content: flex-start;
+    overflow: hidden;
     background-color: #eee;
 }
 
-    .NotepadContent{
+    .Scroll{
         width: 100%;
-        max-width: 1024px;
-        min-height: 100%;
+        height: 100%;
         overflow: auto;
-        display: flex;
-        justify-content: center;
-        align-content: flex-start;
-        flex-direction: row;
-        flex-wrap: wrap;
     }
 
-        .NotepadPainelOfNotes{
-            margin: 2rem;
-            padding: 2rem;
-            width: calc(100% - 2.0rem);
-            max-width: calc(1024px - 2.0rem);
-            min-width: calc(280px - 2.0rem);
-            min-height: calc(100% - 4.0rem);
-            overflow: auto;
-
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(calc(200px - 2rem), calc(100px - 2rem)));
-            grid-template-rows: repeat(auto-fit, minmax(calc(200px - 2rem), calc(100px - 2rem)));
-            gap: 2rem;
-
-            background-color: white;
-            position: relative;
-
+        .NotepadContent{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
         }
 
-            .ButtonAdicionar{
-                position: absolute;
-            }
-
-            .NotepadNotes{
-                padding: 1rem;
-                width: 100%;
-                max-width: calc(200px - 2rem);
-                min-width: calc(100px - 2rem);
-                height: 100%;
-                max-height: calc(200px - 2rem);
-                min-height: calc(100px - 2rem);
-                overflow: auto;
-                border: 1px solid black;
+            .NotepadPainelOfNotes{
+                margin: 1rem;
+                padding: 0.5rem;
+                width: calc(100% - 2rem);
+                max-width: calc(1920px - 2rem);
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                flex-wrap: wrap;
                 position: relative;
+
             }
 
-                .NoteButton{
-                    position: absolute;
+                .ButtonAdicionar{
                     top: 0;
                     left: 0;
-                }
-                .NoteButtonClose{
+                    width: 3.6rem;
+                    height: 3.6rem;
+                    border-radius: 50%;
                     position: absolute;
-                    bottom: 0;
-                    right: 0;
+                    transform: translate(-50%, -50%)
                 }
-                .InputTitle{
-                    
-                }
-                .TextArea{
 
+                .NotepadNotes{
+                    margin: 0.5rem;
+                    padding: 1rem;
+                    width: calc(100% / 12 - 1rem);
+                    position: relative;
+                    background-color: #fff;
+
+                    transition: all ease 0.001s;
                 }
+
+                
+
+                .NotepadNotesOpen{
+                    padding: 3rem;
+                    width: 100vw;
+                    height: 100vh;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background-color: #fff;
+                    z-index: 999;
+
+                    transition: all ease 0.001s;
+                }
+
+                    @media (max-width: 1360px) {
+                        .NotepadNotes{
+                            width: calc(100% / 8 - 1rem);
+                        }
+                    }
+
+                    @media (max-width: 1024px) {
+                        .NotepadNotes{
+                            width: calc(100% / 6 - 1rem);
+                        }
+                    }
+
+                    @media (max-width: 864px) {
+                        .NotepadNotes{
+                            width: calc(100% / 4 - 1rem);
+                        }
+                    }
+
+                    @media (max-width: 664px) {
+                        .NotepadNotes{
+                            width: calc(100% / 3 - 1rem);
+                        }
+                    }
+
+                    @media (max-width: 464px) {
+                        .NotepadNotes{
+                            width: calc(100% / 2 - 1rem);
+                        }
+                    }
+
+                    @media (max-width: 320px) {
+                        .NotepadNotes{
+                            width: calc(100% - 1rem);
+                            min-width: 250px;
+                        }
+                    }
+
+                    .InputTitle{
+                        margin-bottom: 0.25rem;
+                        min-width: 100%;
+                        
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+
+                        font-size: 1.6rem;
+                    }
+                    .TextArea{
+                        margin-top: 0.25rem;
+                        min-width: 100%;
+                        
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+
+                        font-weight: 100;
+
+                        font-size: 1.2rem;
+                    }
+
+                    /* .NotepadNotesInputs{
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                        .NoteButton{
+                            padding: 2rem;
+                            width: 50%;
+                            width: calc(50% - 1rem);
+                        }
+
+                        .NoteButtonClose{
+                            padding: 2rem;
+                            width: calc(50% - 1rem);
+                        }
+
+                    .Card{
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                            
+                        margin-bottom: 2rem;
+                    }
+
+                        .InputTitle{
+                            padding: 2.0rem;
+                            min-width: 100%;
+                            
+                            margin-bottom: 2rem;
+                        }
+                        .TextArea{
+                            padding: 2.0rem;
+                            min-width: 100%;
+
+                            flex-grow: 1;
+                        } */
 
 
 
