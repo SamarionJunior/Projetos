@@ -20,6 +20,7 @@
     align-content: flex-start;
     overflow: hidden;
     background-color: #eee;
+    z-index: 0;
 }
 
     .Scroll{
@@ -75,14 +76,18 @@
                 
 
                 .NotepadNotesOpen{
-                    padding: 3rem;
-                    width: 100vw;
-                    height: 100vh;
-                    position: fixed;
-                    top: 0;
-                    left: 0;
+                    margin: 0.5rem;
+                    padding: 1rem;
+
+                    width: calc(100% - 2rem);
+                    height: calc(100vh - 4rem);
+                    position: absolute;
+                    top: 0.5rem;
+                    left: 0.5rem;
                     background-color: #fff;
                     z-index: 999;
+
+                    border: 4rem solid white;
 
                     transition: all ease 0.001s;
                 }
@@ -147,47 +152,36 @@
                         font-size: 1.2rem;
                     }
 
-                    /* .NotepadNotesInputs{
-                        display: flex;
-                        justify-content: space-between;
-                    }
+.UpdateContant{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    padding: 1rem;
+}
 
-                        .NoteButton{
-                            padding: 2rem;
-                            width: 50%;
-                            width: calc(50% - 1rem);
-                        }
+.UpdateCard{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+}
 
-                        .NoteButtonClose{
-                            padding: 2rem;
-                            width: calc(50% - 1rem);
-                        }
-
-                    .Card{
-                        width: 100%;
-                        height: 100%;
-                        overflow: hidden;
-                        display: flex;
-                        flex-direction: column;
-                        flex-wrap: nowrap;
-                            
-                        margin-bottom: 2rem;
-                    }
-
-                        .InputTitle{
-                            padding: 2.0rem;
-                            min-width: 100%;
-                            
-                            margin-bottom: 2rem;
-                        }
-                        .TextArea{
-                            padding: 2.0rem;
-                            min-width: 100%;
-
-                            flex-grow: 1;
-                        } */
-
-
+.inputTextUpdateCard{
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+    background-color: #eee;
+}
+.inputTextAreaUpdateCard{
+    background-color: #eee;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    flex-grow: 1;
+}
 
 .cortado{
     text-decoration: line-through;

@@ -6,6 +6,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 const Notepad = _ => {
+    const [inputTextUpdateCard, setInputTextUpdateCard] = useState("Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cumque vel quidem. Error animi, expedita, dolores aspernatur, accusamus asperiores repellat at ab vitae delectus possimus necessitatibus modi soluta distinctio molestias.")
+    const [inputTextAreaUpdateCard, setInputTextAreaUpdateCard] = useState("Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cumque vel quidem. Error animi, expedita, dolores aspernatur, accusamus asperiores repellat at ab vitae delectus possimus necessitatibus modi soluta distinctio molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cumque vel quidem. Error animi, expedita, dolores aspernatur, accusamus asperiores repellat at ab vitae delectus possimus necessitatibus modi soluta distinctio molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cumque vel quidem. Error animi, expedita, dolores aspernatur, accusamus asperiores repellat at ab vitae delectus possimus necessitatibus modi soluta distinctio molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cumque vel quidem. Error animi, expedita, dolores aspernatur, accusamus asperiores repellat at ab vitae delectus possimus necessitatibus modi soluta distinctio molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cumque vel quidem. Error animi, expedita, dolores aspernatur, accusamus asperiores repellat at ab vitae delectus possimus necessitatibus modi soluta distinctio molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cumque vel quidem. Error animi, expedita, dolores aspernatur, accusamus asperiores repellat at ab vitae delectus possimus necessitatibus modi soluta distinctio molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cumque vel quidem. Error animi, expedita, dolores aspernatur, accusamus asperiores repellat at ab vitae delectus possimus necessitatibus modi soluta distinctio molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cumque vel quidem. Error animi, expedita, dolores aspernatur, accusamus asperiores repellat at ab vitae delectus possimus necessitatibus modi soluta distinctio molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cumque vel quidem. Error animi, expedita, dolores aspernatur, accusamus asperiores repellat at ab vitae delectus possimus necessitatibus modi soluta distinctio molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cumque vel quidem. Error animi, expedita, dolores aspernatur, accusamus asperiores repellat at ab vitae delectus possimus necessitatibus modi soluta distinctio molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cumque vel quidem. Error animi, expedita, dolores aspernatur, accusamus asperiores repellat at ab vitae delectus possimus necessitatibus modi soluta distinctio molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cumque vel quidem. Error animi, expedita, dolores aspernatur, accusamus asperiores repellat at ab vitae delectus possimus necessitatibus modi soluta distinctio molestias.")
     const [notas, setNotas] = useState([
         {id: Math.random(), title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem suscipit enim voluptates numquam ab libero accusamus neque accusantium porro! Fuga, earum praesentium eius iusto soluta dolorum molestias odit molestiae explicabo?", text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem suscipit enim voluptates numquam ab libero accusamus neque accusantium porro! Fuga, earum praesentium eius iusto soluta dolorum molestias odit molestiae explicabo?"},
         {id: Math.random(), title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem suscipit enim voluptates numquam ab libero accusamus neque accusantium porro! Fuga, earum praesentium eius iusto soluta dolorum molestias odit molestiae explicabo?", text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem suscipit enim voluptates numquam ab libero accusamus neque accusantium porro! Fuga, earum praesentium eius iusto soluta dolorum molestias odit molestiae explicabo?"},
@@ -272,11 +274,15 @@ const Notepad = _ => {
     }
     const btnPress = (e, id) => {
         const Note = document.getElementById("Note"+id)
+        const Notepad = document.getElementById("Notepad")
         // const InputTitle = document.getElementById("InputTitle"+id)
         // const TextArea = document.getElementById("TextArea"+id)
         e.target.value = e.target.value === "Close" ? "Open" : "Close"
         if(e.target.value === "Close"){
             Note.classList.replace('NotepadNotes', 'NotepadNotesOpen');
+            Notepad.style.backgroundColor = "#ffffff";
+            Notepad.style.zIndex = "998";
+            Note.classList.toggle('BoxShadow');
             // InputTitle.style.fontSize = "1em"
             // TextArea.style.fontSize = "1em"
             // Note.style.width = "100%"
@@ -285,6 +291,9 @@ const Notepad = _ => {
             // Note.style.minHeight = "calc(100vh - 8rem)"
         }else{
             Note.classList.replace('NotepadNotesOpen', 'NotepadNotes');
+            Notepad.style.backgroundColor = "#eeeeee";
+            Notepad.style.zIndex = "0";
+            Note.classList.toggle('BoxShadow');
             // InputTitle.style.fontSize = "0.5em"
             // TextArea.style.fontSize = "0.5em"
             // Note.style.width = "calc(100% / 6)"
@@ -298,6 +307,17 @@ const Notepad = _ => {
     return (
         <div id="Notepad" className="Notepad">
             <div className="Scroll">
+                <div className="UpdateContant">
+                    <div className="UpdateCard">
+                        {/* <input className="ButtonAdicionar" type="button" value="ADD" onClick={() => Insert()}/> */}
+                        <input className="inputTextUpdateCard" value={inputTextUpdateCard} type="text"/>
+                        <textarea className="inputTextAreaUpdateCard" value={inputTextAreaUpdateCard}></textarea>
+                        <div className="">
+                            {/* <input className="" type="button" value="Open" onClick={(e) => btnPress(e, )} /> */}
+                            {/* <input className="" type="button" value="Delete" onClick={(e) => Delete()} /> */}
+                        </div>
+                    </div>
+                </div>
                 <div className="NotepadContent">
                     <div className="NotepadPainelOfNotes">
                         {notas.map(nota =>
