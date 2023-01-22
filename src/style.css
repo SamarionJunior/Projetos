@@ -9,10 +9,10 @@
     line-height: 0;
 }
 html{
-    /* font-size: 62.5%; */
-    font-size: 50%;
+    font-size: 62.5%;
+    /* font-size: 50%; */
 }
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     html{
         font-size: 62.5%;
     }
@@ -21,7 +21,7 @@ html{
     html{
         font-size: 75%;
     }
-}
+} */
 body{
     font-size: 1.6rem;
 }

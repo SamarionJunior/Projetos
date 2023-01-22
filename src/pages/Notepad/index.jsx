@@ -279,10 +279,11 @@ const Notepad = _ => {
         // const TextArea = document.getElementById("TextArea"+id)
         e.target.value = e.target.value === "Close" ? "Open" : "Close"
         if(e.target.value === "Close"){
-            Note.classList.replace('NotepadNotes', 'NotepadNotesOpen');
-            Notepad.style.backgroundColor = "#ffffff";
-            Notepad.style.zIndex = "998";
-            Note.classList.toggle('BoxShadow');
+            // Note.classList.replace('NotepadNotes', 'NotepadNotesOpen');
+            // Notepad.style.backgroundColor = "#ffffff";
+            // Notepad.style.zIndex = "998";
+            // Note.classList.toggle('BoxShadow');
+
             // InputTitle.style.fontSize = "1em"
             // TextArea.style.fontSize = "1em"
             // Note.style.width = "100%"
@@ -290,10 +291,11 @@ const Notepad = _ => {
             // Note.style.height = "100%"
             // Note.style.minHeight = "calc(100vh - 8rem)"
         }else{
-            Note.classList.replace('NotepadNotesOpen', 'NotepadNotes');
-            Notepad.style.backgroundColor = "#eeeeee";
-            Notepad.style.zIndex = "0";
-            Note.classList.toggle('BoxShadow');
+            // Note.classList.replace('NotepadNotesOpen', 'NotepadNotes');
+            // Notepad.style.backgroundColor = "#eeeeee";
+            // Notepad.style.zIndex = "0";
+            // Note.classList.toggle('BoxShadow');
+
             // InputTitle.style.fontSize = "0.5em"
             // TextArea.style.fontSize = "0.5em"
             // Note.style.width = "calc(100% / 6)"
@@ -311,7 +313,9 @@ const Notepad = _ => {
                     <div className="UpdateCard">
                         {/* <input className="ButtonAdicionar" type="button" value="ADD" onClick={() => Insert()}/> */}
                         <input className="inputTextUpdateCard" value={inputTextUpdateCard} type="text"/>
-                        <textarea className="inputTextAreaUpdateCard" value={inputTextAreaUpdateCard}></textarea>
+                        <div className="ScrollTextArea">
+                            <textarea className="inputTextAreaUpdateCard" value={inputTextAreaUpdateCard}></textarea>
+                        </div>
                         <div className="">
                             {/* <input className="" type="button" value="Open" onClick={(e) => btnPress(e, )} /> */}
                             {/* <input className="" type="button" value="Delete" onClick={(e) => Delete()} /> */}
