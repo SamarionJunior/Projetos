@@ -312,7 +312,7 @@ const Notepad = _ => {
                 <div className="UpdateContant">
                     <div className="UpdateCard">
                         {/* <input className="ButtonAdicionar" type="button" value="ADD" onClick={() => Insert()}/> */}
-                        <input className="inputTextUpdateCard" value={inputTextUpdateCard} type="text"/>
+                        <textarea className="inputTextUpdateCard" value={inputTextUpdateCard} type="text"></textarea>
                         <div className="ScrollTextArea">
                             <textarea className="inputTextAreaUpdateCard" value={inputTextAreaUpdateCard}></textarea>
                         </div>
