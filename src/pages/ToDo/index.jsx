@@ -9,6 +9,7 @@ import { useState } from "react";
 const ToDo = _ => {
     console.clear()
     const [newTaskInput, setNewTaskInput] = useState("")
+    const [editedText, setEditedText] = useState("")
     const [tasks, setTasks] = useState([
         {isChecked: false, name: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus cupiditate accusantium vero, odio fugit nemo. Commodi hic rem architecto quae, sapiente perspiciatis iure quas inventore neque, tempora beatae amet aliquid.", id: Math.random()},
         {isChecked: false, name: "qwerqwrqweqwegfwqerwetwetsdtsetwertwertwertwertertwertfwertwertre", id: Math.random()},
@@ -146,6 +147,11 @@ const ToDo = _ => {
             console.log("setDataList")
         }
     }, [tasks, searchList])
+
+    useEffect(() => {
+        console.log(editedText)
+    }, [editedText])
+
     const FullText = (command, id) => {
         if(command){
             document.getElementById(`Label${id}`).style.whiteSpace = "normal"
@@ -157,6 +163,36 @@ const ToDo = _ => {
             document.getElementById(`Items${id}`).style.alignItems = "center"
             document.getElementById(`FullTextButtonOpen${id}`).style.display = "block"
             document.getElementById(`FullTextButtonClose${id}`).style.display = "none"
+        }
+    }
+
+    const UpdateText = (command, id) => {
+        if(command){
+            document.getElementById(`LabelLock${id}`).style.display = "none"
+            document.getElementById(`LabelUnlock${id}`).style.display = "block"
+            document.getElementById(`UpdateTextButtonOpen${id}`).style.display = "none"
+            document.getElementById(`UpdateTextButtonClose${id}`).style.display = "block"
+            
+            
+            tasks.forEach(task => {
+                if(task.id === id){
+                    setEditedText(task.name)
+                }
+            })
+        }else{
+            document.getElementById(`LabelLock${id}`).style.display = "block"
+            document.getElementById(`LabelUnlock${id}`).style.display = "none"
+            document.getElementById(`UpdateTextButtonOpen${id}`).style.display = "block"
+            document.getElementById(`UpdateTextButtonClose${id}`).style.display = "none"
+            
+            setTasks(oldTasks => 
+                oldTasks.map(oldTask => {
+                    if(oldTask.id === id){
+                        oldTask.name = editedText
+                    }
+                    return oldTask
+                })
+            )
         }
     }
     // useEffect(() => {
@@ -208,19 +244,28 @@ const ToDo = _ => {
                             {dataList.length !== 0 ? dataList.map(task => 
                                 task !== undefined ? <div key={String(task.id)} className="Items" id={`Items${task.id}`} >
                                     <input id={`check${task.id}`} name={`check${task.id}`} type="checkbox" className="CheckInput"  check={String(task.isChecked)} onChange={(e) => Check(Number(task.id))}/>
+
                                     <button className="ButtonCheckInput" id={`FullTextButtonOpen${task.id}`} onClick={(e => FullText(true, Number(task.id)))}>
                                         <i className="fa-solid fa-caret-down" />
                                     </button>
                                     <button className="ButtonCheckInput" id={`FullTextButtonClose${task.id}`} style={{display: "none"}} onClick={(e => FullText(false, Number(task.id)))}>
                                         <i className="fa-solid fa-caret-up" />
                                     </button>
-                                    <label htmlFor={`check${task.id}`} id={`Label${task.id}`}  className={task.isChecked ? "Label cortado" : "Label"}>{task.name}</label>
+
+                                    <input htmlFor={`check${task.id}`} id={`LabelLock${task.id}`} className={task.isChecked ? "Label cortado" : "Label"} readOnly value={task.name}/>
+                                    <input htmlFor={`check${task.id}`} id={`LabelUnlock${task.id}`} className="Label" style={{display: "none"}} onChange={(e) => setEditedText(String(e.target.value))} value={editedText}/>
+
                                     <button className="ButtonCheckInput" onClick={(e => RemoveTask(Number(task.id)))}>
-                                        <i className="fa-solid fa-arrows-up-down-left-right" />
+                                        <i className="fa-solid fa-arrows-up-down" />
                                     </button>
-                                    <button className="ButtonCheckInput" onClick={(e => RemoveTask(Number(task.id)))}>
+
+                                    <button className="ButtonCheckInput" id={`UpdateTextButtonOpen${task.id}`}  onClick={(e => UpdateText(true, Number(task.id)))}>
                                         <i className="fa-solid fa-pen" />
                                     </button>
+                                    <button className="ButtonCheckInput" id={`UpdateTextButtonClose${task.id}`}  style={{display: "none"}} onClick={(e => UpdateText(false, Number(task.id)))}>
+                                        <i class="fa-solid fa-floppy-disk"></i>
+                                    </button>
+
                                     <button className="ButtonCheckInput" onClick={(e => RemoveTask(Number(task.id)))}>
                                         <i className="fa-solid fa-trash" />
                                     </button>
