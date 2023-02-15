@@ -18,100 +18,38 @@ const ToDo = _ => {
         {isChecked: false, name: "rwhenunwehwuhrsjhlrwjehgbgxdflngvwehrugwhergvnwergmwejghwerjgwergwergwe", id: Math.random()},
         {isChecked: false, name: "uhjrwebhgewryhgweyrghbwehgwbreywcncwyhrvnhevuerwervbkhwejrvnwekvhervjhwe", id: Math.random()},
         {isChecked: false, name: "weruiuethwegieghweyrwhgeryweeeeeeeeeehrwfgbrnhwfergrywiugryqwguehuqie", id: Math.random()},
-        // {isChecked: false, name: "b", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
-        // {isChecked: false, name: "c", id: Math.random()},
+        {isChecked: false, name: "sdruiwhoeiurgwheruwgerhgwuyehgweyghweoiugeghweuighwoegweugowehgu", id: Math.random()},
+        {isChecked: false, name: "rwhenunwehwuhrsjhlrwjehgbgxdflngvwehrugwhergvnwergmwejghwerjgwergwergwe", id: Math.random()},
+        {isChecked: false, name: "uhjrwebhgewryhgweyrghbwehgwbreywcncwyhrvnhevuerwervbkhwejrvnwekvhervjhwe", id: Math.random()},
+        {isChecked: false, name: "weruiuethwegieghweyrwhgeryweeeeeeeeeehrwfgbrnhwfergrywiugryqwguehuqie", id: Math.random()},
+        {isChecked: false, name: "sdruiwhoeiurgwheruwgerhgwuyehgweyghweoiugeghweuighwoegweugowehgu", id: Math.random()},
+        {isChecked: false, name: "rwhenunwehwuhrsjhlrwjehgbgxdflngvwehrugwhergvnwergmwejghwerjgwergwergwe", id: Math.random()},
+        {isChecked: false, name: "uhjrwebhgewryhgweyrghbwehgwbreywcncwyhrvnhevuerwervbkhwejrvnwekvhervjhwe", id: Math.random()},
+        {isChecked: false, name: "weruiuethwegieghweyrwhgeryweeeeeeeeeehrwfgbrnhwfergrywiugryqwguehuqie", id: Math.random()},
+        {isChecked: false, name: "sdruiwhoeiurgwheruwgerhgwuyehgweyghweoiugeghweuighwoegweugowehgu", id: Math.random()},
+        {isChecked: false, name: "rwhenunwehwuhrsjhlrwjehgbgxdflngvwehrugwhergvnwergmwejghwerjgwergwergwe", id: Math.random()},
+        {isChecked: false, name: "uhjrwebhgewryhgweyrghbwehgwbreywcncwyhrvnhevuerwervbkhwejrvnwekvhervjhwe", id: Math.random()},
+        {isChecked: false, name: "weruiuethwegieghweyrwhgeryweeeeeeeeeehrwfgbrnhwfergrywiugryqwguehuqie", id: Math.random()},
+        {isChecked: false, name: "sdruiwhoeiurgwheruwgerhgwuyehgweyghweoiugeghweuighwoegweugowehgu", id: Math.random()},
+        {isChecked: false, name: "rwhenunwehwuhrsjhlrwjehgbgxdflngvwehrugwhergvnwergmwejghwerjgwergwergwe", id: Math.random()},
+        {isChecked: false, name: "uhjrwebhgewryhgweyrghbwehgwbreywcncwyhrvnhevuerwervbkhwejrvnwekvhervjhwe", id: Math.random()},
+        {isChecked: false, name: "weruiuethwegieghweyrwhgeryweeeeeeeeeehrwfgbrnhwfergrywiugryqwguehuqie", id: Math.random()},
+        {isChecked: false, name: "sdruiwhoeiurgwheruwgerhgwuyehgweyghweoiugeghweuighwoegweugowehgu", id: Math.random()},
+        {isChecked: false, name: "rwhenunwehwuhrsjhlrwjehgbgxdflngvwehrugwhergvnwergmwejghwerjgwergwergwe", id: Math.random()},
+        {isChecked: false, name: "uhjrwebhgewryhgweyrghbwehgwbreywcncwyhrvnhevuerwervbkhwejrvnwekvhervjhwe", id: Math.random()},
+        {isChecked: false, name: "weruiuethwegieghweyrwhgeryweeeeeeeeeehrwfgbrnhwfergrywiugryqwguehuqie", id: Math.random()},
+        {isChecked: false, name: "sdruiwhoeiurgwheruwgerhgwuyehgweyghweoiugeghweuighwoegweugowehgu", id: Math.random()},
+        {isChecked: false, name: "rwhenunwehwuhrsjhlrwjehgbgxdflngvwehrugwhergvnwergmwejghwerjgwergwergwe", id: Math.random()},
+        {isChecked: false, name: "uhjrwebhgewryhgweyrghbwehgwbreywcncwyhrvnhevuerwervbkhwejrvnwekvhervjhwe", id: Math.random()},
+        {isChecked: false, name: "weruiuethwegieghweyrwhgeryweeeeeeeeeehrwfgbrnhwfergrywiugryqwguehuqie", id: Math.random()},
+        {isChecked: false, name: "sdruiwhoeiurgwheruwgerhgwuyehgweyghweoiugeghweuighwoegweugowehgu", id: Math.random()},
+        {isChecked: false, name: "rwhenunwehwuhrsjhlrwjehgbgxdflngvwehrugwhergvnwergmwejghwerjgwergwergwe", id: Math.random()},
+        {isChecked: false, name: "uhjrwebhgewryhgweyrghbwehgwbreywcncwyhrvnhevuerwervbkhwejrvnwekvhervjhwe", id: Math.random()},
+        {isChecked: false, name: "weruiuethwegieghweyrwhgeryweeeeeeeeeehrwfgbrnhwfergrywiugryqwguehuqie", id: Math.random()},
+        {isChecked: false, name: "sdruiwhoeiurgwheruwgerhgwuyehgweyghweoiugeghweuighwoegweugowehgu", id: Math.random()},
+        {isChecked: false, name: "rwhenunwehwuhrsjhlrwjehgbgxdflngvwehrugwhergvnwergmwejghwerjgwergwergwe", id: Math.random()},
+        {isChecked: false, name: "uhjrwebhgewryhgweyrghbwehgwbreywcncwyhrvnhevuerwervbkhwejrvnwekvhervjhwe", id: Math.random()},
+        {isChecked: false, name: "weruiuethwegieghweyrwhgeryweeeeeeeeeehrwfgbrnhwfergrywiugryqwguehuqie", id: Math.random()},
     ])
     const setNewTask = task => {
         setTasks(oldTasks => 
@@ -154,12 +92,14 @@ const ToDo = _ => {
 
     const FullText = (command, id) => {
         if(command){
-            document.getElementById(`Label${id}`).style.whiteSpace = "normal"
+            document.getElementById(`LabelLock${id}`).style.whiteSpace = "normal"
+            document.getElementById(`LabelUnlock${id}`).style.whiteSpace = "normal"
             document.getElementById(`Items${id}`).style.alignItems = "start"
             document.getElementById(`FullTextButtonOpen${id}`).style.display = "none"
             document.getElementById(`FullTextButtonClose${id}`).style.display = "block"
         }else{
-            document.getElementById(`Label${id}`).style.whiteSpace = "nowrap"
+            document.getElementById(`LabelLock${id}`).style.whiteSpace = "nowrap"
+            document.getElementById(`LabelUnlock${id}`).style.whiteSpace = "nowrap"
             document.getElementById(`Items${id}`).style.alignItems = "center"
             document.getElementById(`FullTextButtonOpen${id}`).style.display = "block"
             document.getElementById(`FullTextButtonClose${id}`).style.display = "none"
@@ -219,15 +159,15 @@ const ToDo = _ => {
     return (
         <div id="ToDo" className="ToDo">
             <main className="ToDoContent">
-                <section className="List BoxShadow">
+                <section className="List">
                     <div className="Form">
                         <button className="ButtonTextInput" onClick={() => newTaskInput !== "" ? Search() : console.log("Vazio!!!")}>
                             <i className="fa-solid fa-magnifying-glass" />
                         </button>
 
-                        <button className="ButtonTextInput" onClick={() => searchList !== false ? setSearchList(false) : undefined}>
+                        {/* <button className="ButtonTextInput" onClick={() => searchList !== false ? setSearchList(false) : undefined}>
                             <i className="fa-solid fa-xmark" />
-                        </button>
+                        </button> */}
 
                         <input id="NewTaskInput" name="NewTaskInput" type="text" className="TextInput" placeholder="Digite uma Nova Tarefa?" value={newTaskInput} onChange={(e) => setNewTaskInput(String(e.target.value))}/>
                        
@@ -245,18 +185,14 @@ const ToDo = _ => {
                                 task !== undefined ? <div key={String(task.id)} className="Items" id={`Items${task.id}`} >
                                     <input id={`check${task.id}`} name={`check${task.id}`} type="checkbox" className="CheckInput"  check={String(task.isChecked)} onChange={(e) => Check(Number(task.id))}/>
 
-                                    <button className="ButtonCheckInput" id={`FullTextButtonOpen${task.id}`} onClick={(e => FullText(true, Number(task.id)))}>
+                                    <p htmlFor={`check${task.id}`} id={`LabelLock${task.id}`} className={task.isChecked ? "Label cortado" : "Label"}>{task.name}</p>
+                                    <input htmlFor={`check${task.id}`} id={`LabelUnlock${task.id}`} className="Label" style={{display: "none"}} onChange={(e) => setEditedText(String(e.target.value))} value={editedText}/>
+                                    
+                                    {/* <button className="ButtonCheckInput" id={`FullTextButtonOpen${task.id}`} onClick={(e => FullText(true, Number(task.id)))}>
                                         <i className="fa-solid fa-caret-down" />
                                     </button>
                                     <button className="ButtonCheckInput" id={`FullTextButtonClose${task.id}`} style={{display: "none"}} onClick={(e => FullText(false, Number(task.id)))}>
                                         <i className="fa-solid fa-caret-up" />
-                                    </button>
-
-                                    <input htmlFor={`check${task.id}`} id={`LabelLock${task.id}`} className={task.isChecked ? "Label cortado" : "Label"} readOnly value={task.name}/>
-                                    <input htmlFor={`check${task.id}`} id={`LabelUnlock${task.id}`} className="Label" style={{display: "none"}} onChange={(e) => setEditedText(String(e.target.value))} value={editedText}/>
-
-                                    <button className="ButtonCheckInput" onClick={(e => RemoveTask(Number(task.id)))}>
-                                        <i className="fa-solid fa-arrows-up-down" />
                                     </button>
 
                                     <button className="ButtonCheckInput" id={`UpdateTextButtonOpen${task.id}`}  onClick={(e => UpdateText(true, Number(task.id)))}>
@@ -264,7 +200,7 @@ const ToDo = _ => {
                                     </button>
                                     <button className="ButtonCheckInput" id={`UpdateTextButtonClose${task.id}`}  style={{display: "none"}} onClick={(e => UpdateText(false, Number(task.id)))}>
                                         <i class="fa-solid fa-floppy-disk"></i>
-                                    </button>
+                                    </button> */}
 
                                     <button className="ButtonCheckInput" onClick={(e => RemoveTask(Number(task.id)))}>
                                         <i className="fa-solid fa-trash" />
@@ -280,3 +216,7 @@ const ToDo = _ => {
 }
 
 export default ToDo
+
+{/* <button className="ButtonCheckInput" onClick={(e => RemoveTask(Number(task.id)))}>
+    <i className="fa-solid fa-arrows-up-down" />
+</button> */}
